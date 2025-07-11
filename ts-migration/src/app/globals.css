@@ -1,0 +1,200 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.theme-switcher {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-switcher:hover {
+  background-color: #45a049;
+}
+
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+  max-width: 500px;
+    padding: 20px;
+  height: 100px;
+  width: 500px;
+}
+button {
+    padding: 7px;
+    border: "black";
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 20px;
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+#greetingCss{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+  color: black;
+  font-size: 100px;
+}
+
+#weatherCss{
+  width:100%;
+  margin:auto;
+  font-size:50px;
+  color:blue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.parent-button button{
+  background-color:  #dd7973;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  color: rgb(24, 23, 23);
+}
+
+.btn-1{
+  padding: 20px;
+  border: 2px solid rgb(96 139 168);
+  border-radius: 5px;
+  background-color: rgb(96 139 168 / 0.2);
+
+}
+.incbtn{
+  border: solid 1px green;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+}
+.button-wrapper{
+  display: flex;
+  width: 500px;
+ padding-top: 50px;
+  margin: auto;
+  gap: 40px;
+}
+
+.tasks {
+  list-style-type: disc;     
+  padding-left: 20px;        
+  max-width: 400px;           
+  margin: 10px auto;         
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; 
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tasks li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+.imageStyle {
+  width: 100%;
+  height: auto;
+}
+
+.containerStyle {
+  padding: 16px;
+  text-align: center;
+}
+
+.cardStyle {
+  box-shadow: 0 4px 8px #000000; 
+  width: 300px;
+  border-radius: 5px;
+  margin: 16px auto;
+  font-family: sans-serif;
+  
+}
+
+
+/* src/app/globals.css */
+
+/* 
+  Define theme variables. 
+  :root is equivalent to the .light theme by default.
+*/
+:root {
+  --background-main: #f9fafb;
+  --background-sidebar: #1e293b;
+  --text-main: #111827;
+  --text-sidebar: #ffffff;
+  --text-button: #ffffff;
+  --background-button: #3b82f6;
+}
+
+/* 
+  Define the variables for the dark theme.
+  These will override the :root variables when the body has a 'dark' class.
+*/
+body.dark {
+  --background-main: #1f2937;
+  --background-sidebar: #111827;
+  --text-main: #f9fafb;
+  --text-sidebar: #e5e7eb;
+  --text-button: #ffffff;
+  --background-button: #60a5fa;
+}
+
+
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-main); 
+  color: var(--text-main);
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.sidebar {
+  width: 240px;
+  background-color: var(--background-sidebar); 
+  color: var(--text-sidebar); 
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.theme-button {
+    background-color: var(--background-button);
+    color: var(--text-button);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
